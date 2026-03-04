@@ -1,0 +1,10 @@
+# Python önbellek dosyaları
+__pycache__/
+*.py[cod]
+
+# PyCharm / IntelliJ ayarları
+.idea/
+
+# Sanal ortam klasörü (venv kullanıyorsan)
+venv/
+.venv/
