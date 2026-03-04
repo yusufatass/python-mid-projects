@@ -8,8 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_URL = "https://api.freecurrencyapi.com/v1/"
-# API anahtarını artık doğrudan koda yazmak yerine yüklü olan ortamlardan çekiyoruz
-# Bu sayede kodumuzu GitHub'a yüklediğimizde anahtarımız gizli kalacak
+
 API_KEY = os.getenv("API_KEY")
 
 printer = PrettyPrinter()
