@@ -38,4 +38,8 @@ Kullanıcının hesap adlarını ve şifrelerini düz metin (plaintext) yerine, 
   * **Dış Kütüphane Kullanımı:** Python'un güçlü `cryptography` kütüphanesinin (özellikle `Fernet` modülünün) entegrasyonu.
   * **Nesne Yönelimli Programlama (OOP):** `PasswordManager` adında bir sınıf (class) oluşturarak değişkenleri ve fonksiyonları (metotları) tek bir çatı altında düzenli bir şekilde yönetme.
   * **Kimlik Doğrulama (Authentication):** Programın ana döngüsü başlamadan önce, dosyadaki verileri arka planda çözmeyi deneyerek kullanıcının yetkisini doğrulama akışı.
+
+ ### 6. 💱 Gerçek Zamanlı Döviz Çevirici (`currency_converter.py`)
+İnternet üzerinden gerçek zamanlı bir API servisine bağlanarak güncel döviz kurlarını çeken, listeleyen ve iki para birimi arasında anlık tutar hesaplaması yapan gelişmiş bir konsol uygulamasıdır.
+* **Ne Öğretir?** REST API'ler ile iletişim kurma (`urllib.request`), internetten gelen JSON formatındaki verileri sözlük (dictionary) ve listelere çevirerek işleme (`json.loads`), API anahtarı gibi hassas bilgileri `.env` (Environment Variables) dosyası ile kodun dışında güvenle saklama ve ağ hatalarını/yanlış kullanıcı girişlerini `try-except` bloklarıyla yönetme.
 ---
