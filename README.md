@@ -30,4 +30,12 @@ Kullanıcının sanal bir bakiye yatırarak satırlar (lines) üzerinden bahis y
 Kullanıcının belirlediği sayıda kaplumbağanın ekrana çizildiği, her birinin rastgele hızlarda bitiş çizgisine doğru ilerlediği görsel ve animasyonlu bir yarış simülasyonudur.
 * **Ne Öğretir?** `turtle` kütüphanesi ile ekrana obje çizdirme ve hareket ettirme, koordinat sistemi (X ve Y eksenleri), listeden tekrarsız rastgele eleman seçme (`random.sample()`) ve yazılımdaki nesne (Object) mantığının temelleri.
 
+### 6. 🔐 Kriptografik Şifre Yöneticisi (`password_manager.py`)
+Kullanıcının hesap adlarını ve şifrelerini düz metin (plaintext) yerine, modern kriptografi standartlarında şifreleyerek yerel bir dosyada güvenle saklayan gelişmiş bir parola yöneticisidir. Sisteme giriş, tıpkı profesyonel uygulamalardaki gibi tek bir "Master Password" (Ana Parola) ile korunur. Yanlış ana parola girildiğinde sistemdeki hiçbir veriye ulaşılamaz.
+
+* **Ne Öğretir?** * **Siber Güvenlik Temelleri:** Düz metinleri kırılamaz verilere dönüştüren Simetrik Şifreleme (Symmetric Encryption) mantığı.
+  * **KDF ve Tuzlama (Salting):** Kullanıcının girdiği basit bir parolayı, `PBKDF2HMAC` algoritması ve rastgele üretilen bir "Salt" (Tuz) dosyası ile birleştirerek 32-byte'lık güvenli bir kriptografik anahtara dönüştürme.
+  * **Dış Kütüphane Kullanımı:** Python'un güçlü `cryptography` kütüphanesinin (özellikle `Fernet` modülünün) entegrasyonu.
+  * **Nesne Yönelimli Programlama (OOP):** `PasswordManager` adında bir sınıf (class) oluşturarak değişkenleri ve fonksiyonları (metotları) tek bir çatı altında düzenli bir şekilde yönetme.
+  * **Kimlik Doğrulama (Authentication):** Programın ana döngüsü başlamadan önce, dosyadaki verileri arka planda çözmeyi deneyerek kullanıcının yetkisini doğrulama akışı.
 ---
